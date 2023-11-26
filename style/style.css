@@ -1,8 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost&family=Roboto&display=swap");
 
 @font-face {
   font-family: "Roboto";
   src: url("../fonts/Roboto.woff") format("woff");
+  font-weight: normal;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Jost";
+  src: url("../fonts/Jost.woff") format("woff");
   font-weight: normal;
   font-display: swap;
   font-style: normal;
@@ -17,7 +25,7 @@ body {
   padding: 8px;
   font-family: "Roboto", sans-serif;
 }
-.header-wrapper {
+header {
   background: #ffffef;
   padding-top: 16px;
 }
@@ -25,7 +33,7 @@ body {
   max-width: 1360px;
   margin: auto;
 }
-header {
+.header-wrapper {
   padding: 25px 64px;
   margin: auto;
   display: flex;
@@ -77,4 +85,283 @@ header {
   margin-right: 8px;
   margin-top: 5px;
   align-items: flex-end;
+}
+.banner-wrapper {
+  background: #ffffef;
+  padding: 16px;
+  margin-top: 10px;
+}
+.banner {
+  background-image: -webkit-image-set(
+    url("../img/bg1/bg1.webp") type("image/webp"),
+    url("../img/bg1/bg1.png") type("image/png")
+  );
+  background-image: image-set(
+    url("../img/bg1/bg1.webp") type("image/webp"),
+    url("../img/bg1/bg1.png") type("image/png")
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+  height: 700px;
+  padding: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: end;
+}
+.title {
+  color: #56593d;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+}
+.text {
+  color: #56593d;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+}
+.button {
+  color: #ffffef;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22.365px;
+  letter-spacing: 1.575px;
+  text-transform: uppercase;
+  background: #56593d;
+  border: none;
+  cursor: pointer;
+}
+.banner__text {
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 21.6px; /* 120% */
+  letter-spacing: 1.8px;
+}
+.banner__title {
+  font-size: 45px;
+  line-height: 60.48px; /* 134.4% */
+  margin-bottom: 25px;
+}
+.banner__button {
+  padding: 15px 30px 15px 30px;
+  transition: 0.3s;
+}
+.banner__button:hover {
+  background: #747753;
+  transform: scale(1.2);
+  transition: 0.3s;
+}
+.tagline {
+  margin-top: 94px;
+  padding: 0 85px;
+}
+.tagline-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.tagline__title {
+  text-align: center;
+  font-size: 57px;
+  line-height: 81px; /* 142.105% */
+  margin-bottom: 23px;
+}
+.tagline-links {
+  display: flex;
+  gap: 73px;
+}
+.tagline-link {
+  text-decoration: none;
+  color: #56593d;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25.6px; /* 160% */
+  letter-spacing: 1.6px;
+  border-bottom: 2px solid #56593d;
+}
+.tagline-link::after {
+  content: url(../img/icons/arrow_right.svg);
+  margin-left: 10px;
+  transition: 0.3s;
+}
+.tagline-link:hover::after {
+  margin-left: 20px;
+  transition: 0.3s;
+}
+.collection {
+  margin-top: 90px;
+  background: #ffffef;
+  padding: 64px 0 80px 0;
+  margin-bottom: 23px;
+}
+.collection-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.collection__title {
+  margin-bottom: 80px;
+  text-align: center;
+  font-size: 24px;
+  line-height: 32.4px; /* 135% */
+}
+.collection-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+.collection-item-link {
+  text-decoration: none;
+}
+.product-info {
+  margin-top: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.product-name {
+  font-size: 16px;
+  line-height: 21.6px; /* 135% */
+}
+.product-price {
+  font-size: 16px;
+  line-height: 25.92px; /* 162% */
+  letter-spacing: 1.62px;
+}
+.essentials {
+  background-image: -webkit-image-set(
+    url("../img/bg2/bg2.webp") type("image/webp"),
+    url("../img/bg2/bg2.png") type("image/png")
+  );
+  background-image: image-set(
+    url("../img/bg2/bg2.webp") type("image/webp"),
+    url("../img/bg2/bg2.png") type("image/png")
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+  padding: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+.essentials__text {
+  text-align: center;
+  font-size: 17px;
+  line-height: 21.6px; /* 127.059% */
+  letter-spacing: 1.8px;
+}
+.essentials__title {
+  text-align: center;
+  font-size: 50px;
+  line-height: 60.48px; /* 120.96% */
+}
+.about {
+  background: #ffffef;
+  margin-top: 24px;
+}
+.about-wrapper {
+  padding: 64px 32px;
+  display: flex;
+  gap: 32px;
+}
+.about-info {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding: 63px 88px;
+}
+.about-info__title {
+  color: #56593d;
+  text-align: center;
+  font-size: 29px;
+  line-height: 38.88px; /* 134.069% */
+}
+.seporator {
+  width: 40px;
+  height: 1px;
+  background: #717353;
+  margin: 32px 0;
+}
+.about-info__text {
+  color: #56593d;
+  text-align: center;
+  font-family: Jost;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32.4px; /* 162% */
+}
+.subscribe.container {
+  padding: 40px 16px;
+}
+.subscribe-wrapper {
+  background: #ffffef;
+  padding: 55px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.subscribe__title {
+  color: #56593d;
+  text-align: center;
+  font-size: 28px;
+  line-height: 38.88px; /* 138.857% */
+  margin-bottom: 16px;
+}
+.subscribe__text{
+  color: #56593D;
+text-align: center;
+font-size: 17px;
+line-height: 28.8px; /* 169.412% */
+margin-bottom: 45px;
+}
+.subscribe-form{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 17px;
+  align-items: center;
+  justify-content: center;
+}
+.subscribe-form__input{
+  width: 340px;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid #56593D;
+}
+.subscribe-form_button{
+  padding: 0 25px;
+}
+.photos{
+  background: #FFFFEF;
+  padding: 64px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.photos-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px
 }
