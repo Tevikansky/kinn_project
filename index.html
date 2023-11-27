@@ -12,14 +12,21 @@
 <body>
   <header>
     <div class="header-wrapper">
-      <nav>
+      <div class="mobile-menu-wrapper">
+        <div class="mobile-menu-burger">
+          <div class="mobile-menu-line"></div>
+          <div class="mobile-menu-line"></div>
+          <div class="mobile-menu-line"></div>
+        </div>
+      </div>
+      <nav class="nav">
         <ul class="nav-list">
           <li class="nav-item dropdown"><a href="#" class="nav-item__link link">Shop</a>
-              <div class="dropdown-content">
-                <a href="#" class="text">Shop 1</a>
-                <a href="#" class="text">Shop 2</a>
-                <a href="#" class="text">Shop 3</a>
-              </div>
+            <div class="dropdown-content">
+              <a href="#" class="text">Shop 1</a>
+              <a href="#" class="text">Shop 2</a>
+              <a href="#" class="text">Shop 3</a>
+            </div>
           </li>
           <li class="nav-item"><a href="#" class="nav-item__link link">Style Quiz</a></li>
           <li class="nav-item"><a href="#" class="nav-item__link link">About Us</a></li>
@@ -28,7 +35,8 @@
               <a href="#" class="text">Stories 1</a>
               <a href="#" class="text">Stories 2</a>
               <a href="#" class="text">Stories 3</a>
-            </div></li>
+            </div>
+          </li>
         </ul>
       </nav>
       <div class="logo">
@@ -57,10 +65,46 @@
               <svg width="32" height="32" class="menu-item-svg">
                 <use href="img/sprite.svg#cart"></use>
               </svg>
-            </a></li>
+            </a>
+            <span class="quantity">0</span>
+          </li>
         </ul>
       </div>
     </div>
+    <div class="mobile-menu">
+      <ul class="mobile-menu-nav nav-list">
+        <li class="nav-item dropdown"><a href="#" class="nav-item__link link">Shop</a>
+          <ul class="submenu">
+            <li><a href="#" class="link">Shop 1</a></li>
+            <li><a href="#" class="link">Shop 2</a></li>
+            <li><a href="#" class="link">Shop 2</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a href="#" class="nav-item__link link">Style Quiz</a></li>
+        <li class="nav-item"><a href="#" class="nav-item__link link">About Us</a></li>
+        <li class="nav-item dropdown"><a href="#" class="nav-item__link link">Stories</a>
+          <ul class="submenu">
+            <li><a href="#" class="link">Stories 1</a></li>
+            <li><a href="#" class="link">Stories 2</a></li>
+            <li><a href="#" class="link">Stories 2</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="mobile-menu-list">
+        <li class="mobile-menu-item"><a href="#" class="menu__link link">
+            <svg width="32" height="32" class="menu-item-svg">
+              <use href="img/sprite.svg#profile"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobile-menu-item"><a href="#" class="menu__link link">
+            <svg width="32" height="32" class="menu-item-svg">
+              <use href="img/sprite.svg#search"></use>
+            </svg>
+          </a></li>
+      </ul>
+    </div>
+
   </header>
   <main>
     <section>
@@ -179,9 +223,9 @@
       <div class="subscribe-wrapper">
         <h2 class="subscribe__title title">Sign up to our newsletter</h2>
         <p class="subscribe__text text">Receive special offers and first look at new products.</p>
-        <form class="subscribe-form" action="">
-          <input class="subscribe-form__input" type="text">
-          <button class="subscribe-form__button button">Subscribe</button>
+        <form class="subscribe-form">
+          <input class="subscribe-form__input" type="email" id="email">
+          <button type="submit" class="subscribe-form__button button">Subscribe</button>
         </form>
       </div>
     </section>
@@ -226,10 +270,16 @@
           <div class="footer-seporator seporator"></div>
           <nav class="footer-nav">
             <ul class=" footer-nav-list nav-list">
-              <li class="nav-item"><a href="#" class="nav-item__link link">Shop</a></li>
+              <li class="nav-item footer-dropdown dropdown"><a href="#" class="nav-item__link link">Shop</a>
+                <div class="dropdown-content">
+                  <a href="#" class="text">Shop 1</a>
+                  <a href="#" class="text">Shop 2</a>
+                  <a href="#" class="text">Shop 3</a>
+                </div>
+              </li>
               <li class="nav-item"><a href="#" class="nav-item__link link">Style Quiz</a></li>
               <li class="nav-item"><a href="#" class="nav-item__link link">About Us</a></li>
-              <li class="nav-item dropdown"><a href="#" class="nav-item__link link">Stories</a>
+              <li class="nav-item footer-dropdown dropdown"><a href="#" class="nav-item__link link">Stories</a>
                 <div class="dropdown-content">
                   <a href="#" class="text">Stories 1</a>
                   <a href="#" class="text">Stories 2</a>
@@ -271,6 +321,9 @@
       </div>
     </div>
   </footer>
+
+  <script defer src="./js/main.js"></script>
+  <script defer src="./js/sendForm.js"></script>
 </body>
 
 </html>
