@@ -129,7 +129,7 @@ header {
   line-height: 25.2px;
 }
 .nav-item__link,
-.menu__link {
+.menu-link {
   text-decoration: none;
   font-family: Roboto;
   color: inherit;
@@ -141,7 +141,7 @@ header {
   text-transform: uppercase;
   position: relative;
 }
-.menu__link:hover {
+.menu-link:hover {
   border-bottom: none;
   stroke: #696969;
   fill: #3a3a3a;
@@ -303,18 +303,18 @@ header {
   gap: 32px;
   flex-wrap: wrap;
 }
-.collection-item__link {
+.collection-item-link {
   text-decoration: none;
   border-bottom: none;
   transition: 0.3s;
 }
-.collection-item__link:hover {
+.collection-item-link:hover {
   border-bottom: none;
 }
-.collection-item__link img {
+.collection-item-link img {
   transition: 0.3s;
 }
-.collection-item__link:hover img {
+.collection-item-link:hover img {
   transform: scale(1.1);
   transition: 0.3s;
 }
@@ -487,7 +487,7 @@ footer {
   flex-direction: column;
   width: 250px;
 }
-.footer__text {
+.footer-text {
   color: #ffffef;
   font-size: 16px;
   line-height: 25.2px; /* 157.5% */
@@ -497,13 +497,13 @@ footer {
   margin-top: 15px;
   margin-bottom: 25px;
 }
-.footer__text:nth-child(1) {
+.footer-text:nth-child(1) {
   font-size: 15px;
   line-height: 18.9px; /* 126% */
   letter-spacing: 1.575px;
   text-transform: uppercase;
 }
-.footer-column:nth-child(1) > .footer__text:first-child {
+.footer-column:nth-child(1) > .footer-text:first-child {
   text-transform: none;
 }
 .footer-nav-list {
@@ -512,16 +512,16 @@ footer {
   color: #ffffef;
   gap: 18px;
 }
-.footer__link {
+.footer-link {
   text-decoration: none;
   color: inherit;
   border-bottom: none;
 }
-.footer__link:hover {
+.footer-link:hover {
   text-decoration: underline;
   border-bottom: none;
 }
-.footer__link svg:hover {
+.footer-link svg:hover {
   fill: white;
 }
 .footer-socials {
@@ -667,7 +667,7 @@ footer {
     border-bottom: 2px solid transparent;
     transform: scale(1);
   }
-  .collection-item__link {
+  .collection-item-link {
     border: none;
   }
   .tagline__link:hover::after {
@@ -678,7 +678,7 @@ footer {
     transform: scale(1);
     background: #56593d;
   }
-  .collection-item__link:hover img {
+  .collection-item-link:hover img {
     transform: scale(1);
     transition: 0.3s;
   }
@@ -689,11 +689,11 @@ footer {
   .dropdown:hover .dropdown-content {
     display: none;
   }
-  .footer__link:hover,
-  .collection-item__link:hover {
+  .footer-link:hover,
+  .collection-item-link:hover {
     border: none;
   }
-  .footer__link:hover svg {
+  .footer-link:hover svg {
     border: none;
     fill: inherit;
     stroke: inherit;
