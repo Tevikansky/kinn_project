@@ -14,35 +14,46 @@
     <div class="header-wrapper">
       <nav>
         <ul class="nav-list">
-          <li class="nav-item"><a href="#" class="nav-item-link">Shop</a></li>
-          <li class="nav-item"><a href="#" class="nav-item-link">Style Quiz</a></li>
-          <li class="nav-item"><a href="#" class="nav-item-link">About Us</a></li>
-          <li class="nav-item"><a href="#" class="nav-item-link">Stories</a></li>
+          <li class="nav-item dropdown"><a href="#" class="nav-item__link link">Shop</a>
+              <div class="dropdown-content">
+                <a href="#" class="text">Shop 1</a>
+                <a href="#" class="text">Shop 2</a>
+                <a href="#" class="text">Shop 3</a>
+              </div>
+          </li>
+          <li class="nav-item"><a href="#" class="nav-item__link link">Style Quiz</a></li>
+          <li class="nav-item"><a href="#" class="nav-item__link link">About Us</a></li>
+          <li class="nav-item dropdown"><a href="#" class="nav-item__link link">Stories</a>
+            <div class="dropdown-content">
+              <a href="#" class="text">Stories 1</a>
+              <a href="#" class="text">Stories 2</a>
+              <a href="#" class="text">Stories 3</a>
+            </div></li>
         </ul>
       </nav>
       <div class="logo">
-        <a href="./" class="logo-link">
+        <a href="./" class="logo__link link">
           <picture class="logo-wrapper">
             <source type="image/webp" srcset="./img/logo/logo.webp">
             <source type="image/png" srcset="./img/logo/logo.png">
-            <img src="./img/logo/logo.png" width="90px" height="26" alt="logo" class="logo-img">
+            <img src="./img/logo/logo.png" width="90" height="26" alt="logo" class="logo-img">
           </picture>
         </a>
       </div>
       <div class="menu">
         <ul class="menu-list">
-          <li class="menu-item"><a href="#" class="menu-link">
+          <li class="menu-item"><a href="#" class="menu__link link">
               <svg width="32" height="32" class="menu-item-svg">
                 <use href="img/sprite.svg#profile"></use>
               </svg>
             </a>
           </li>
-          <li class="menu-item"><a href="#" class="menu-link">
+          <li class="menu-item"><a href="#" class="menu__link link">
               <svg width="32" height="32" class="menu-item-svg">
                 <use href="img/sprite.svg#search"></use>
               </svg>
             </a></li>
-          <li class="menu-item"><a href="#" class="menu-link">
+          <li class="menu-item"><a href="#" class="menu__link link">
               <svg width="32" height="32" class="menu-item-svg">
                 <use href="img/sprite.svg#cart"></use>
               </svg>
@@ -51,151 +62,215 @@
       </div>
     </div>
   </header>
-  <section>
-    <div class="banner-wrapper container">
-      <div class="banner">
-        <p class="banner__text text">ALL COLLECTIONS</p>
-        <h3 class="banner__title title">Elevate Your Everyday</h3>
-        <button class="banner__button button">SHOP NOW</button>
+  <main>
+    <section>
+      <div class="banner-wrapper container">
+        <div class="banner">
+          <p class="banner__text text">ALL COLLECTIONS</p>
+          <h3 class="banner__title title">Elevate Your Everyday</h3>
+          <button class="banner__button button">SHOP NOW</button>
+        </div>
       </div>
-    </div>
-  </section>
-  <section class="tagline">
-    <div class="tagline-wrapper container">
-      <h2 class="tagline__title title">If your happy place is at the dinner table, we totally get that. That’s why we
-        created products to help you find slow moments in a fast world.</h2>
-      <div class="tagline-links">
-        <a href="#" class="tagline-link">Shop All</a>
-        <a href="#" class="tagline-link">Read Stories</a>
+    </section>
+    <section class="tagline">
+      <div class="tagline-wrapper container">
+        <h2 class="tagline__title title">If your happy place is at the dinner table, we totally get that. That’s why we
+          created products to help you find slow moments in a fast world.</h2>
+        <div class="tagline-links">
+          <a href="#" class="tagline__link link">Shop All</a>
+          <a href="#" class="tagline__link link">Read Stories</a>
+        </div>
       </div>
-    </div>
-  </section>
-  <section class="collection container">
-    <div class="collection-wrapper ">
-      <h2 class="collection__title title">Maple Board Collection</h2>
-      <div class="collection-items">
-        <a href="#" class="collection-item-link">
-          <figure class="collection-item">
-            <picture class="collection-item__pic">
-              <source type="image/webp" srcset="./img/boards/board1.webp">
-              <source type="image/png" srcset="./img/boards/board1.png">
-              <img src="./img/boards/board1.png" alt="product" class="collection-item-img">
-            </picture>
-            <figcaption class="product-info">
-              <p class="product-name text">Maple Board - Short</p>
-              <p class="product-price text">$98.00</p>
-            </figcaption>
-          </figure>
-        </a>
-        <a href="#" class="collection-item-link">
-          <figure class="collection-item">
-            <picture class="collection-item__pic">
-              <source type="image/webp" srcset="./img/boards/board2.webp">
-              <source type="image/png" srcset="./img/boards/board2.png">
-              <img src="./img/boards/board2.png" alt="product" class="collection-item-img">
-            </picture>
-            <figcaption class="product-info">
-              <p class="product-name text">Maple Board - Long</p>
-              <p class="product-name text">$125.00</p>
-            </figcaption>
-          </figure>
-        </a>
-        <a href="#" class="collection-item-link">
-          <figure class="collection-item">
-            <picture class="collection-item__pic">
-              <source type="image/webp" srcset="./img/boards/board3.webp">
-              <source type="image/png" srcset="./img/boards/board3.png">
-              <img src="./img/boards/board3.png" alt="product" class="collection-item-img">
-            </picture>
-            <figcaption class="product-info">
-              <p class="product-name text">Maple Board - Wide</p>
-              <p class="product-price text">$158.00</p>
-            </figcaption>
-          </figure>
-        </a>
+    </section>
+    <section class="collection container">
+      <div class="collection-wrapper ">
+        <h2 class="collection__title title">Maple Board Collection</h2>
+        <div class="collection-items">
+          <a href="#" class="collection-item__link link">
+            <figure class="collection-item">
+              <picture class="collection-item__pic">
+                <source type="image/webp" srcset="./img/boards/board1.webp">
+                <source type="image/png" srcset="./img/boards/board1.png">
+                <img src="./img/boards/board1.png" alt="product" class="collection-item-img">
+              </picture>
+              <figcaption class="product-info">
+                <p class="product-name text">Maple Board - Short</p>
+                <p class="product-price text">$98.00</p>
+              </figcaption>
+            </figure>
+          </a>
+          <a href="#" class="collection-item__link link">
+            <figure class="collection-item">
+              <picture class="collection-item__pic">
+                <source type="image/webp" srcset="./img/boards/board2.webp">
+                <source type="image/png" srcset="./img/boards/board2.png">
+                <img src="./img/boards/board2.png" alt="product" class="collection-item-img">
+              </picture>
+              <figcaption class="product-info">
+                <p class="product-name text">Maple Board - Long</p>
+                <p class="product-name text">$125.00</p>
+              </figcaption>
+            </figure>
+          </a>
+          <a href="#" class="collection-item__link link">
+            <figure class="collection-item">
+              <picture class="collection-item__pic">
+                <source type="image/webp" srcset="./img/boards/board3.webp">
+                <source type="image/png" srcset="./img/boards/board3.png">
+                <img src="./img/boards/board3.png" alt="product" class="collection-item-img">
+              </picture>
+              <figcaption class="product-info">
+                <p class="product-name text">Maple Board - Wide</p>
+                <p class="product-price text">$158.00</p>
+              </figcaption>
+            </figure>
+          </a>
+        </div>
       </div>
-    </div>
-  </section>
-  <section>
-    <div class="banner-wrapper container">
-      <div class="banner essentials">
-        <p class="essentials__text text">THE ESSENTIALS</p>
-        <h3 class="essentials__title title">We believe minimalism means more. More space, more time, more meaningful
-          moments.</h3>
+    </section>
+    <section>
+      <div class="banner-wrapper container">
+        <div class="banner essentials">
+          <p class="essentials__text text">THE ESSENTIALS</p>
+          <h3 class="essentials__title title">We believe minimalism means more. More space, more time, more meaningful
+            moments.</h3>
+        </div>
       </div>
-    </div>
-  </section>
-  <section class="about container">
-    <div class="about-wrapper">
-      <div class="about-photo">
-        <picture class="about-photo__pic">
-          <source type="image/webp" srcset="./img/about1/about1.webp">
-          <source type="image/png" srcset="./img/about1/about1.png">
-          <img src="./img/about1/about1.png" alt="shelves" class="collection-item-img">
+    </section>
+    <section class="about container">
+      <div class="about-wrapper">
+        <div class="about-photo">
+          <picture class="about-photo__pic">
+            <source type="image/webp" srcset="./img/about1/about1.webp">
+            <source type="image/png" srcset="./img/about1/about1.png">
+            <img src="./img/about1/about1.png" alt="shelves" class="collection-item-img">
+          </picture>
+        </div>
+        <div class="about-info">
+          <h2 class="about-info__title title">Our Design Story</h2>
+          <div class="seporator"></div>
+          <p class="about-info__text text">We believe in thoughtful, intentional living. So we promise not to clutter
+            your
+            cabinets with one-off pieces you’ll rarely use. Our collection only includes items you’ll reach for every
+            day.
+            Because mindful living should be simple, not stressful.</p>
+        </div>
+      </div>
+    </section>
+    <section class="about container">
+      <div class="about-wrapper">
+        <div class="about-info">
+          <h2 class="about-info__title title">Your Table Your Time</h2>
+          <div class="seporator"></div>
+          <p class="about-info__text text">Our modern lives keep us in constant motion. But what keeps us moving isn’t
+            always what moves us. Our time at the table is our pause button. Meals can become moments and moments can
+            become memories. So grab a plate, pull up a seat, and stay a while</p>
+        </div>
+        <div class="about-photo">
+          <picture class="about-photo__pic">
+            <source type="image/webp" srcset="./img/about2/about2.webp">
+            <source type="image/png" srcset="./img/about2/about2.png">
+            <img src="./img/about2/about2.png" alt="shelves" class="collection-item-img">
+          </picture>
+        </div>
+      </div>
+    </section>
+    <section class="subscribe container">
+      <div class="subscribe-wrapper">
+        <h2 class="subscribe__title title">Sign up to our newsletter</h2>
+        <p class="subscribe__text text">Receive special offers and first look at new products.</p>
+        <form class="subscribe-form" action="">
+          <input class="subscribe-form__input" type="text">
+          <button class="subscribe-form__button button">Subscribe</button>
+        </form>
+      </div>
+    </section>
+    <section class="photos container">
+      <h2 class="photos__title title">#KinnMoments</h2>
+      <div class="photos-wrapper">
+        <picture class="photo">
+          <source type="image/webp" srcset="./img/photos/photo1.webp">
+          <source type="image/png" srcset="./img/photos/photo1.png">
+          <img src="./img/photos/photo1.png" alt="photo" class="photo__img">
+        </picture>
+        <picture class="photo">
+          <source type="image/webp" srcset="./img/photos/photo2.webp">
+          <source type="image/png" srcset="./img/photos/photo2.png">
+          <img src="./img/photos/photo2.png" alt="photo" class="photo__img">
+        </picture>
+        <picture class="photo">
+          <source type="image/webp" srcset="./img/photos/photo3.webp">
+          <source type="image/png" srcset="./img/photos/photo3.png">
+          <img src="./img/photos/photo3.png" alt="photo" class="photo__img">
+        </picture>
+        <picture class="photo">
+          <source type="image/webp" srcset="./img/photos/photo4.webp">
+          <source type="image/png" srcset="./img/photos/photo4.png">
+          <img src="./img/photos/photo4.png" alt="photo" class="photo__img">
         </picture>
       </div>
-      <div class="about-info">
-        <h2 class="about-info__title title">Our Design Story</h2>
-        <div class="seporator"></div>
-        <p class="about-info__text text">We believe in thoughtful, intentional living. So we promise not to clutter your
-          cabinets with one-off pieces you’ll rarely use. Our collection only includes items you’ll reach for every day.
-          Because mindful living should be simple, not stressful.</p>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-wrapper">
+      <div class="footer-columns">
+        <div class="footer-column">
+          <p class="footer__text text">© 2021 Kinn Home</p>
+          <div class="footer-seporator seporator"></div>
+          <p class="footer__text text">Need to get in touch? Just email us at
+            <a href="mailto:hello@kinnhome.co" class="footer__link link">hello@kinnhome.co</a>
+          </p>
+        </div>
+        <div class="footer-column">
+          <p class="footer__text text">Explore</p>
+          <div class="footer-seporator seporator"></div>
+          <nav class="footer-nav">
+            <ul class=" footer-nav-list nav-list">
+              <li class="nav-item"><a href="#" class="nav-item__link link">Shop</a></li>
+              <li class="nav-item"><a href="#" class="nav-item__link link">Style Quiz</a></li>
+              <li class="nav-item"><a href="#" class="nav-item__link link">About Us</a></li>
+              <li class="nav-item dropdown"><a href="#" class="nav-item__link link">Stories</a>
+                <div class="dropdown-content">
+                  <a href="#" class="text">Stories 1</a>
+                  <a href="#" class="text">Stories 2</a>
+                  <a href="#" class="text">Stories 3</a>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer-column">
+          <p class="footer__text  text">Help</p>
+          <div class="footer-seporator seporator"></div>
+          <nav class="footer-nav">
+            <ul class="footer-nav-list second nav-list">
+              <li class="nav-item"><a href="#" class="nav-item__link link">FAQs + Shipping</a></li>
+              <li class="nav-item"><a href="#" class="nav-item__link link">Contact</a></li>
+              <li class="nav-item"><a href="#" class="nav-item__link link">Terms</a></li>
+              <li class="nav-item"><a href="#" class="nav-item__link link">Trade</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="footer-socials">
+        <a href="#" class="footer__link link">
+          <svg width="30" height="30" class="footer-svg">
+            <use href="img/sprite.svg#facebook"></use>
+          </svg>
+        </a>
+        <a href="#" class="footer__link link">
+          <svg width="30" height="30" class="footer-svg">
+            <use href="img/sprite.svg#pinterest"></use>
+          </svg>
+        </a>
+        <a href="#" class="footer__link link">
+          <svg width="30" height="30" class="footer-svg">
+            <use href="img/sprite.svg#instagram"></use>
+          </svg>
+        </a>
       </div>
     </div>
-  </section>
-  <section class="about container">
-    <div class="about-wrapper">
-      <div class="about-info">
-        <h2 class="about-info__title title">Your Table Your Time</h2>
-        <div class="seporator"></div>
-        <p class="about-info__text text">Our modern lives keep us in constant motion. But what keeps us moving isn’t
-          always what moves us. Our time at the table is our pause button. Meals can become moments and moments can
-          become memories. So grab a plate, pull up a seat, and stay a while</p>
-      </div>
-      <div class="about-photo">
-        <picture class="about-photo__pic">
-          <source type="image/webp" srcset="./img/about2/about2.webp">
-          <source type="image/png" srcset="./img/about2/about2.png">
-          <img src="./img/about2/about2.png" alt="shelves" class="collection-item-img">
-        </picture>
-      </div>
-    </div>
-  </section>
-  <section class="subscribe container">
-    <div class="subscribe-wrapper">
-      <h2 class="subscribe__title title">Sign up to our newsletter</h2>
-      <p class="subscribe__text text">Receive special offers and first look at new products.</p>
-      <form class="subscribe-form" action="">
-        <input class="subscribe-form__input" type="text">
-        <button class="subscribe-form_button button">Subscribe</button>
-      </form>
-    </div>
-  </section>
-  <section class="photos container">
-    <h2 class="photos__title title">#KinnMoments</h2>
-    <div class="photos-wrapper">
-      <picture class="photo__pic">
-        <source type="image/webp" srcset="./img/photos/photo1.webp">
-        <source type="image/png" srcset="./img/photos/photo1.png">
-        <img src="./img/photos/photo1.png" alt="photo" class="photo__img">
-      </picture>
-      <picture class="photo__pic">
-        <source type="image/webp" srcset="./img/photos/photo2.webp">
-        <source type="image/png" srcset="./img/photos/photo2.png">
-        <img src="./img/photos/photo2.png" alt="photo" class="photo__img">
-      </picture>
-      <picture class="photo__pic">
-        <source type="image/webp" srcset="./img/photos/photo3.webp">
-        <source type="image/png" srcset="./img/photos/photo3.png">
-        <img src="./img/photos/photo3.png" alt="photo" class="photo__img">
-      </picture>
-      <picture class="photo__pic">
-        <source type="image/webp" srcset="./img/photos/photo4.webp">
-        <source type="image/png" srcset="./img/photos/photo4.png">
-        <img src="./img/photos/photo4.png" alt="photo" class="photo__img">
-      </picture>
-    </div>
-  </section>
+  </footer>
 </body>
 
 </html>
